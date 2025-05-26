@@ -42,7 +42,8 @@ int read_word(const char *input, char *output) {
     return i; 
 }
 
-int main(int argc, char **argv) {
+#ifdef TOKENIZE_TEST
+int tokenize_main(int argc, char **argv) {
     char buf[256]; 
     char input[256];
     
@@ -78,3 +79,4 @@ int main(int argc, char **argv) {
 
     return 0;
 }
+#endif
